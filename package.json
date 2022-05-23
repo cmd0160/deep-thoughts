@@ -1,0 +1,47 @@
+{
+  "name": "deep-thoughts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "history": "^4.10.1",
+    "hoist-non-react-statics": "^3.3.2",
+    "isarray": "^0.0.1",
+    "js-tokens": "^4.0.0",
+    "loose-envify": "^1.4.0",
+    "mini-create-react-context": "^0.4.1",
+    "object-assign": "^4.1.1",
+    "path-to-regexp": "^1.8.0",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-is": "^16.13.1",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.3.0",
+    "regenerator-runtime": "^0.13.9",
+    "resolve-pathname": "^3.0.0",
+    "tiny-invariant": "^1.2.0",
+    "tiny-warning": "^1.0.3",
+    "value-equal": "^1.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmd0160/deep-thoughts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmd0160/deep-thoughts/issues"
+  },
+  "homepage": "https://github.com/cmd0160/deep-thoughts#readme"
+}
